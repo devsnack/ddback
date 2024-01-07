@@ -22,6 +22,17 @@ const visitesSchema = new mongoose.Schema({
     type: [{}],
     required: true,
   },
+  location: {
+    type: {
+      type: String,
+      enum: ["Point"],
+      // required: true,
+    },
+    coordinates: {
+      type: [Number],
+      // required: true,
+    },
+  },
 
   //   customers: [String],
 });
